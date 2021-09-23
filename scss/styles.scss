@@ -67,7 +67,7 @@ header {
     width: 100%;
 
     .selector {
-        width: 100%;
+        width: calc(100% -2px);
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         display: flex;
@@ -188,6 +188,9 @@ header {
 @media (min-width: 768px) {
     .select-buttons {
         flex-direction: row;
+        .selector {
+            width: 100%;
+        }
     }
     .main {
         .content {

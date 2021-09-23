@@ -85,7 +85,7 @@ header .content h1 {
   width: 100%;
 }
 .select-buttons .selector {
-  width: 100%;
+  width: calc(100% -2px);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   display: -webkit-box;
@@ -235,6 +235,9 @@ header .content h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .select-buttons .selector {
+    width: 100%;
   }
 
   .main .content {
