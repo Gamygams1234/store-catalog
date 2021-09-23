@@ -63,10 +63,27 @@ function filterStores(param) {
 
 function sortArray() {
   if (sort != "") {
+  if (sort === "Alphabet"){
+    sortByName()
+  }else  {
     displayStores.sort(function (a, b) {
       return b[sort] - a[sort];
     });
   }
+}
+  updateUI();
+}
+
+function sortByName() {
+    displayStores.sort(function (a, b) {
+      var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
+      if (nameA < nameB) //sort string ascending
+          return -1 
+      if (nameA > nameB)
+          return 1
+      return 0 
+    });
+
   updateUI();
 }
 
@@ -77,6 +94,9 @@ function handleSelect(param) {
   } else if (param === "Rating") {
     sort = "rating";
     sortArray();
+  }else if (param === "Alphabet") {
+    sort = "Alphabet";
+    sortByName();
   }
   updateUI();
 }
