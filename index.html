@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Store Catalog</title>
+    <meta name="description"
+        content="A catalog where users can see what stores are available to them with cash backl. " />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Fraunces:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/selector.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header class="padding-container">
+        <div class="content fraunces">
+            <h1 class="fw-700">All stores</h1>
+            <p class="fw-500">These are all the stores we work with</p>
+        </div>
+    </header>
+    <section id="category-buttons" class="select-buttons barlow">
+        <div value="Electronics" class="selector fw-600">
+            Electronics
+        </div>
+        <div value="Clothing" class="selector selected fw-600">
+            Clothing
+        </div>
+        <div value="Office" class="selector fw-600">
+            Office
+        </div>
+        <div value="Home Improvement" class="selector fw-600">
+            Home Tools & Improvement
+        </div>
+
+    </section>
+
+    <section class="main padding-container">
+        <div class="content">
+            <div class="category-selector barlow">
+                <div class="label">Sort by:</div>
+                <div class="custom-select" id="sort" style="width:100%;">
+                    <select>
+                        <option class="option" value="0">Sort:</option>
+                        <option class="option">Cash Back</option>
+                        <option class="option">Rating</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="store-listing" id="store-listing">
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <script type="text/javascript" src="data.json"></script>
+    <script src="./scripts/select.js"></script>
+    <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

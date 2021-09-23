@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Home Depot",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 5, 
+    "type": "Home Improvement"
+  },
+  {
+    "name": "Ace Hardware",
+    "description": "This is the store description.",
+    "cashBack": 3,
+    "rating": 5, 
+    "type": "Home Improvement"
+  },
+  {
+    "name": "Lowes",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 4, 
+    "type": "Home Improvement"
+  },
+  {
+    "name": "Yunker Hardware",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 2, 
+    "type": "Home Improvement"
+  },
+  {
+    "name": "No Fear",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 5, 
+    "type": "Clothing"
+  },
+  {
+    "name": "Forever 21",
+    "description": "This is the store description.",
+    "cashBack": 3,
+    "rating": 5, 
+    "type": "Clothing"
+  },
+  {
+    "name": "Macy's",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 4, 
+    "type": "Clothing"
+  },
+  {
+    "name": "Nordstrom",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 2, 
+    "type": "Clothing"
+  },
+  {
+    "name": "Office Depot",
+    "description": "This is the store description.",
+    "cashBack": 2,
+    "rating": 5, 
+    "type": "Office"
+  },
+  {
+    "name": "Staples",
+    "description": "This is the store description.",
+    "cashBack": 15,
+    "rating": 4, 
+    "type": "Office"
+  },
+  {
+    "name": "Best Buy",
+    "description": "This is the store description.",
+    "cashBack": 10,
+    "rating": 2, 
+    "type": "Electronics"
+  },
+  {
+    "name": "Fed Ex",
+    "description": "This is the store description.",
+    "cashBack": 14,
+    "rating": 3, 
+    "type": "Office"
+  },
+  {
+    "name": "Frys",
+    "description": "This is the store description.",
+    "cashBack": 3,
+    "rating": 5, 
+    "type": "Electronics"
+  },
+  {
+    "name": "Fedco",
+    "description": "This is the store description.",
+    "cashBack": 12,
+    "rating": 1, 
+    "type": "Electronics"
+  },
+  {
+    "name": "Target",
+    "description": "This is the store description.",
+    "cashBack": 14,
+    "rating": 3, 
+    "type": "Electronics"
+  }
+]
