@@ -3,7 +3,7 @@
     "name": "Home Depot",
     "description": "This is the store description.",
     "cashBack": 2,
-    "rating": 5, 
+    "rating": 3.5, 
     "type": "Home Improvement"
   },
   {
@@ -17,14 +17,14 @@
     "name": "Lowes",
     "description": "This is the store description.",
     "cashBack": 2,
-    "rating": 4, 
+    "rating": 4.5, 
     "type": "Home Improvement"
   },
   {
     "name": "Yunker Hardware",
     "description": "This is the store description.",
     "cashBack": 2,
-    "rating": 2, 
+    "rating": 2.5, 
     "type": "Home Improvement"
   },
   {
@@ -45,14 +45,14 @@
     "name": "Macy's",
     "description": "This is the store description.",
     "cashBack": 2,
-    "rating": 4, 
+    "rating": 4.5, 
     "type": "Clothing"
   },
   {
     "name": "Nordstrom",
     "description": "This is the store description.",
     "cashBack": 2,
-    "rating": 2, 
+    "rating": 2.5, 
     "type": "Clothing"
   },
   {
@@ -66,7 +66,7 @@
     "name": "Office Max",
     "description": "This is the store description.",
     "cashBack": 7,
-    "rating": 4, 
+    "rating": 3.5, 
     "type": "Office"
   },
   {
@@ -80,7 +80,7 @@
     "name": "Best Buy",
     "description": "This is the store description.",
     "cashBack": 10,
-    "rating": 2, 
+    "rating": 2.5, 
     "type": "Electronics"
   },
   {

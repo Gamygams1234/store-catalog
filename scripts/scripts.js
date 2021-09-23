@@ -42,15 +42,28 @@ categoryButtons.addEventListener("click", function (e) {
 
 function outOfFive(rating) {
   let html = ``;
-  for (let i = 0; i < rating; i++) {
-    html += ` <span class="fa fa-star checked"></span>`;
-  }
-  if (rating < 5) {
-    let remainer = 5 - rating;
-    for (let i = 0; i < remainer; i++) {
+  if (rating == Math.floor(rating)){
+    for (let i = 0; i < rating; i++) {
+      html += ` <span class="fa fa-star checked"></span>`;
+    }
+    if (rating < 5) {
+      let remainder = 5 - rating;
+      for (let i = 0; i < remainder; i++) {
+        html += ` <span class="fa fa-star"></span>`;
+      }
+    }
+  }else{
+    let remainder = 5 - rating;
+    for (let i = 0; i < Math.floor(rating); i++) {
+      html += ` <span class="fa fa-star checked"></span>`;
+    }
+    html += ` <span class="fa fa-star-half-o checked"></span>`
+    for (let i = 0; i < Math.floor(remainder); i++) {
       html += ` <span class="fa fa-star"></span>`;
     }
+
   }
+
   return html;
 }
 

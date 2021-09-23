@@ -46,6 +46,12 @@ body {
   font-weight: 900;
 }
 
+.fa {
+  color: #fefcf6;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 .checked {
   color: orange;
 }
@@ -211,6 +217,12 @@ header .content h1 {
 }
 .main .content .store-listing .card:hover {
   background-color: #f4f1eb;
+}
+.main .content .store-listing .card:hover .fa {
+  color: #f4f1eb;
+}
+.main .content .store-listing .card:hover .checked {
+  color: orange;
 }
 
 @media (min-width: 576px) {
