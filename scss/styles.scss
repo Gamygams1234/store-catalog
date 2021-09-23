@@ -100,8 +100,8 @@ header {
 .main {
     padding-bottom: 1em;
     .content {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         .category-selector {
             margin-bottom: 1rem;
             .label {
@@ -109,9 +109,9 @@ header {
             }
         }
         .store-listing {
-            display: flex;
+            display: grid;
             grid-template-columns: 1fr;
-            flex-direction: column;
+
             .card {
                 margin: 0.5em;
                 transition: 0.2s ease-in-out;
@@ -169,19 +169,16 @@ header {
 @media (min-width: 576px) {
     .main {
         .content {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
             .category-selector {
-                width: 28%;
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
             .store-listing {
-                width: 72%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+                grid-template-columns: 1fr 1fr;
+
                 .card {
-                    width: calc(50% - 4em);
                 }
             }
         }
@@ -194,15 +191,14 @@ header {
     }
     .main {
         .content {
+            grid-template-columns: 1fr 5fr;
             .category-selector {
-                width: 16.5%;
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
             .store-listing {
-                width: 99.835%;
+                grid-template-columns: 1fr 1fr 1fr;
                 .card {
-                    width: calc(33% - 4em);
                     .image {
                         width: 100%;
 

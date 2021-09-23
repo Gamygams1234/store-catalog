@@ -63,6 +63,13 @@
     "type": "Office"
   },
   {
+    "name": "Office Max",
+    "description": "This is the store description.",
+    "cashBack": 7,
+    "rating": 4, 
+    "type": "Office"
+  },
+  {
     "name": "Staples",
     "description": "This is the store description.",
     "cashBack": 15,

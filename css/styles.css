@@ -126,13 +126,10 @@ header .content h1 {
   padding-bottom: 1em;
 }
 .main .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 .main .content .category-selector {
   margin-bottom: 1rem;
@@ -141,15 +138,10 @@ header .content h1 {
   margin-bottom: 0.5rem;
 }
 .main .content .store-listing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .main .content .store-listing .card {
   margin: 0.5em;
@@ -223,30 +215,18 @@ header .content h1 {
 
 @media (min-width: 576px) {
   .main .content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
   }
   .main .content .category-selector {
-    width: 28%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .main .content .store-listing {
-    width: 72%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .main .content .store-listing .card {
-    width: calc(50% - 4em);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 768px) {
@@ -257,16 +237,17 @@ header .content h1 {
             flex-direction: row;
   }
 
+  .main .content {
+    -ms-grid-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr;
+  }
   .main .content .category-selector {
-    width: 16.5%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .main .content .store-listing {
-    width: 99.835%;
-  }
-  .main .content .store-listing .card {
-    width: calc(33% - 4em);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .main .content .store-listing .card .image {
     width: 100%;
